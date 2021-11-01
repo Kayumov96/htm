@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registration Form</title>
+</head>
+<body>
+    <style>
+       #name{
+           padding: 8px;
+           margin-left: 184px;
+            width: 300px;
+            box-sizing: border-box;
+            font-size: 15px;
+        }
+        #address{
+            padding: 8px;
+           margin-left: 170px;
+           margin-top: 15px;
+           width: 300px;
+           box-sizing: border-box;
+            font-size: 15px;
+        }
+        #zipcode{
+            padding: 8px;
+           margin-left: 162px;
+           margin-top: 15px;
+            width: 300px;
+            box-sizing: border-box;
+            font-size: 15px;
+        }
+        #country{
+            padding: 8px;
+           margin-left: 170px;
+           margin-top: 15px;
+            width: 300px;
+            box-sizing: border-box;
+            font-size: 15px;
+        }
+        #gender{
+            padding: auto;
+            margin-top: 15px;
+            margin-left: 176px;
+        }
+        .preferences{
+            padding: auto;
+            margin-top: 15px;
+            margin-left: 150px;
+        }
+    #phone{
+        padding: 8px;
+        margin-left: 186px;
+        margin-top: 15px;
+        width: 300px;
+        box-sizing: border-box;
+    }
+    #email{
+        padding: 8px;
+        margin-left: 188px;
+        margin-top: 15px;
+        width: 300px;
+        box-sizing: border-box; 
+    }
+    #password{
+        padding: 8px;
+        margin-left: 60px;
+        margin-top: 15px;
+        width: 300px;
+        box-sizing: border-box;
+    }
+    #verifypassword{
+        padding: 8px;
+        margin-left: 121px;
+        margin-top: 15px;
+        width: 300px;
+        box-sizing: border-box;
+    }
+    .submit{
+       padding: 8px;
+       width: 100px;
+       margin-left: 230px;
+       margin-top: 15px;
+    }
+    .clear{
+        padding: 8px;
+        margin-top: 15px;
+        width: 100px;
+
+    }
+    </style>
+  <h1> HTML Form Input Validation Using JavaScript</h1>
+  <form target="_blank" action="http://www.google.com" method="POST">
+    <label for="name"> Name</label>
+    <input id="name" type="text">
+       <br>
+    <label for="address">Address</label>
+    <input id="address" type="text">
+       <br>
+    <label for="zipcode">Zip Code</label>
+    <input id="zipcode" type="text">
+       <br>
+    <label for="country">Country</label>
+    <select name="country" id="country">
+        <option value="russia">Russia</option>
+        <option value="uzbekistan" selected>Uzbekistan</option>
+        <option value="united kingdom">United Kingdom</option>
+        <option value="united states">United States</option>
+        <option value="spain">Spain</option>
+        <option value="italy">Italy</option>
+    </select>
+        <br>
+    <label for="gender" class="gender">Gender
+      <input type="radio" id="gender" name="gender" value="male">Male
+      <input type="radio" name="gender" value="female">Female
+    </label>
+        <br>
+    <label  for="preferences">Preferences
+    <input class="preferences" type="checkbox">Red
+    <input type="checkbox">Green
+    <input type="checkbox">Blue
+</label>
+        <br>
+    <label for="phone">Phone</label>
+    <input id="phone"type="number">
+       <br>
+    <label for="email">Email</label>
+    <input id="email" type="email">
+       <br>
+    <label for="password">Password (6-8 characters)</label>
+    <input id="password" type="password">
+       <br>
+    <label for="verifypassword">Verify Password</label>
+    <input id="verifypassword" type="password">
+    <br>
+    <button class="submit" type="submit">SEND</button>
+    <button  class="clear" type="reset">CLEAR</button>
+</form>
+</body>
+</html>
