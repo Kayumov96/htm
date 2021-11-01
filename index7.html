@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sending Money</title>
+    <link rel="icon" href="../visa.svg">
+    <style type="text/css">
+    *{
+        margin: 0;
+        padding: 0;
+    }
+    body{
+        font-family: sans-serif;
+        background-image: /*url(../background1.jpg)*/ /*url(https://wallpaperboat.com/wp-content/uploads/2019/12/foggy-forest-21-920x518.jpg)*/ url(https://wallpapercave.com/wp/wp4223005.jpg);
+        background-color: rgb(119, 204, 207);
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center center;
+        background-attachment: fixed;
+    }
+    .container{
+        height: 600px;
+        width: 350px;
+        display: block;
+        border: 1px solid;
+       top: 50%;
+       left: 50%;
+       transform: translate(-50%, -50%);
+       position: absolute;
+       border-radius: 20px;
+       box-shadow: 5px 5px 2px 1px rgba(64, 64, 66, 0.452), -5px 0 2px rgba(64, 64, 66, 0.589);
+    }
+    .topBox:hover{
+        background-color: rgba(199, 194, 194, 0.685);
+    }
+    .topBox{
+        height: 150px;
+        background-color: rgba(255, 255, 255, 0.445);
+        border-top-left-radius: inherit;
+        border-top-right-radius: inherit;
+    }
+    .topBox>h2{
+        text-align: center;
+        padding-top: 20px;
+    }
+    .topBox>span{
+        font-size: 50px;
+        justify-content: center;
+        align-items: center;
+        display: flex;
+    }
+    .visa{
+        display: flex;
+        width: inherit;
+        background-color: rgba(255, 255, 255, 0.445);
+        border-top: 1px solid;
+        height: 120px; 
+    }
+    .visa:hover{
+        background-color: rgba(199, 194, 194, 0.685);
+    }
+    .visa>img{
+        width: 130px;
+    }
+    .visa>h4{
+           padding-left: 50px;
+           padding-top: 45px;
+           font-size: 25px;
+           color: rgba(27, 25, 25, 0.904);
+           font-family:  Helvetica, sans-serif;
+    }
+    .check{
+        width: 30px;
+        height: 30px;
+        padding-top: 45px;
+    }
+    .mastercard{
+        display: flex;
+        height: 120px;
+        border-top: 1px solid;
+        width: inherit;
+        background-color: rgba(255, 255, 255, 0.445);
+    }
+    .mastercard:hover{
+        background-color: rgba(199, 194, 194, 0.685);
+    }
+    .mastercard>img{
+        width: 130px;
+    }
+    .mastercard>h4{
+        padding-left: 20px;
+        padding-top: 45px;
+        font-size: 25px;
+        color: rgba(27, 25, 25, 0.904);
+    }
+    .maestro{
+        display: flex;
+        height: 120px;
+        border-top: 1px solid;
+        width: inherit;
+        background-color: rgba(255, 255, 255, 0.445);
+    }
+    .maestro:hover{
+        background-color: rgba(199, 194, 194, 0.685);
+    }
+    .maestro>img{
+        width: 130px;
+    }
+    .maestro>h4{
+        padding-left: 30px;
+        padding-top: 45px;
+        font-size: 25px;
+        color: rgba(27, 25, 25, 0.904);
+    }
+    .next{
+        background-color: rgba(74, 105, 196, 0.418);
+        height: 86px;
+        border-top: 1px solid;
+        border-bottom-left-radius: inherit;
+        border-bottom-right-radius: inherit;
+        text-align: center;
+        align-items: center;
+        justify-content: center;
+        display: flex;
+    }
+    .next:hover{
+        background-color: rgba(117, 133, 189, 0.685);
+    }
+
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="topBox">
+             <span>&#xb7;&#xb7;&#xb7;</span>
+             <h2>PAYMENT METHOD</h2>
+        </div>
+       <div class="visa">
+            <img src="../visa.svg" alt="VISA"> 
+            <h4>VISA</h4>
+            <img class="check" src="../check.svg" alt="Checked">
+        </div>
+        <div class="mastercard">
+             <img src="../mastercard.svg" alt="MASTERCARD">
+             <h4>MASTERCARD</h4>
+        </div>
+        <div class="maestro">
+             <img src="../maestro.svg" alt="MAESTRO">
+             <h4>MAESTRO</h4>
+        </div>
+        <div class="next">
+            <h3>NEXT STEP <span>&#x2192;</span></h3>
+        </div>
+    </div>
+</body>
+</html>
